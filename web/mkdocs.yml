@@ -1,0 +1,22 @@
+site_name: eBPF notes
+theme:
+  name: material
+  custom_dir: overrides
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+plugins:
+  - search
+  - git-authors
+nav:
+    - index.md
+    - Overview:
+        - overview/articles.md
+        - overview/linux-kernel.md
+    - 'Getting Started':
+        - getting-started/hello-world.md
+    - 'Go and ebpf':
+        - 'Setup': 'golang-ebpf/setup.md'
