@@ -28,3 +28,4 @@ nav:
         - getting-started/hello-world.md
     - 'Go and ebpf':
         - 'Setup': 'golang-ebpf/setup.md'
+    - takeaway.md
