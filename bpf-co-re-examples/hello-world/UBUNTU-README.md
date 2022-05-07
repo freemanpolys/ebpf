@@ -1,20 +1,8 @@
 # eBPF packages on Ubuntu 21.10
 // for bpftool command 
-sudo apt install  linux-tools-common
+$ sudo apt update -y 
 
-sudo bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h
-
-WARNING: bpftool not found for kernel 5.13.0-35
-
-  You may need to install the following packages for this specific kernel:
-    linux-tools-5.13.0-35-generic
-    linux-cloud-tools-5.13.0-35-generic
-
-  You may also want to install one of the following packages to keep up to date:
-    linux-tools-generic
-    linux-cloud-tools-generic
-
-sudo apt install   linux-tools-5.13.0-35-generic  linux-cloud-tools-5.13.0-35-generic
+$ sudo apt install libbpf-dev linux-tools-common clang build-essential -y
 
 # ebpf-hello-world
 
